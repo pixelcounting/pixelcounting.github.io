@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){var themeID=my_script_vars.postID;});

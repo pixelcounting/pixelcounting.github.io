@@ -1,0 +1,1 @@
+jQuery('body').on('click','.wpcp-button',function(){var _this=jQuery(this);var id=_this.attr('data-id');_this.prepend('<img class="preloader" src="'+WPCP.preloader+'"/>');jQuery.ajax({url:WPCP.ajaxurl,type:'POST',cache:false,data:{action:'wpcp_add',id:id,nonce:WPCP.nonce},success:function(result){_this.html(result);}});});
